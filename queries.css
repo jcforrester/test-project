@@ -1,0 +1,66 @@
+@media (max-width: 640px) { 
+	#line {
+	display: none !important;
+	}
+ }
+
+ @media (max-width: 1024px) { 
+	#line {
+	height: 150px !important;
+	}
+ }
+
+ @media (max-width: 640px) { 
+	#slider {
+	width: 70% !important;
+	margin-left: 5%;
+	}
+ }
+
+  @media (max-width: 1024px) { 
+	.buttonBox {
+	width: 80% !important;
+	}
+ }
+
+  @media (max-width: 640px) { 
+	.buttonBox {
+		display: block;
+		display: inline-block;
+		text-align: center;
+		min-width: 100%;
+		height: 260px;
+ 		}
+ }	
+
+   @media (max-width: 640px) { 
+	.left {
+		float: none;
+ 		}
+}
+
+   @media (max-width: 1024px) { 
+	.birds {
+	display: none !important;
+ }
+}
+
+    @media (max-width: 1024px) { 
+	.video {
+	margin-top: 0px !important;
+	width: 100%;
+ }
+}
+
+
+   @media (max-width: 640px) { 
+	.footerimg {
+		height: 15em;
+ 		}
+}
+
+   @media (max-width: 640px) { 
+	.social {
+		height: 50px;
+ 		}
+}

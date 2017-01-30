@@ -1,0 +1,132 @@
+body {
+
+}
+
+.imgbox { 
+    background-image: url('slices/big-ears-festival-2016-header.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 30em;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+   max-width: initial;
+}
+
+#banner {
+	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	z-index: -1;
+}
+
+#logo {
+	margin-top: 35px;
+}
+
+#line {
+	margin-top: 24px;
+	background-color: red;
+	border: 1px solid #fff;
+	height: 200px;
+
+}
+
+#slider {
+	margin-top: 35px;
+}
+
+.buttonBox {
+background-color: white;
+height: 150px;
+width: 60%;
+margin-top: -85px;
+}
+
+.buttonBox img {
+	margin-top: 30px;
+}
+
+
+.birds {
+margin-top: -160px;
+margin-left: 55px;
+margin-right: 55px;
+}
+
+.video {
+	margin-top: -270px;
+}
+
+
+/*TEXT STYLES*/
+h1 {
+font-family: nimbus-sans-cond-reg;
+font-size: 32px;
+line-height: 37px;
+color: #000;
+margin-bottom: 10px;
+margin-left: 10px;
+}
+
+h2 {
+font-family: nimbus-sans-cond-reg;
+font-size: 24px;
+line-height: 27px;
+color: #000;
+margin-bottom: 10px;
+}
+
+h3 {
+font-family: proxima-nova-bold;
+font-size:16px;
+line-height: 20px;
+color: #000;
+margin-top: 6px;
+margin-bottom: 6px;
+margin-left: 10px;
+}
+
+p {
+margin-left: 10px;
+}
+
+/*Footer Styles*/
+
+.footerimg { 
+    background-image: url('slices/big-ears-splash-footer.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	margin-top: 20px;
+	height:6em;
+}
+
+footer h1 {
+	text-align: center;
+	margin-top: 10%;
+}
+
+footer {
+	margin-right: none;
+}
+
+.ftrcenter {
+	margin-top:2%;
+}
+
+.social {
+	display: block;
+	margin: auto;
+	height: 50px;
+}
+
+
