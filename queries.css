@@ -10,6 +10,18 @@
 	}
  }
 
+  @media (max-width: 1024px) { 
+	.imgbox {
+	height: 20em;
+	}
+ }
+
+   @media (max-width: 640px) { 
+	.imgbox {
+	height: 30em;
+	}
+ }
+
  @media (max-width: 640px) { 
 	#slider {
 	width: 70% !important;
@@ -34,7 +46,7 @@
  }	
 
    @media (max-width: 640px) { 
-	.left {
+	.right {
 		float: none;
  		}
 }
@@ -43,9 +55,16 @@
 	.birds {
 	display: none !important;
  }
+
+}
+    @media (max-width: 1024px) { 
+	.video {
+	width: 85%;
+ }
 }
 
-    @media (max-width: 1024px) { 
+
+    @media (max-width: 640px) { 
 	.video {
 	margin-top: 0px !important;
 	width: 100%;
@@ -62,5 +81,31 @@
    @media (max-width: 640px) { 
 	.social {
 		height: 50px;
+ 		}
+}
+
+   @media (max-width: 640px) { 
+	.facebook {
+		margin-right: -25px;
+ 		}
+}
+
+   @media (max-width: 640px) { 
+	.twitter {
+		margin-right: 80px;
+ 		}
+}
+
+/*slick slider fixes*/
+
+   @media (max-width: 640px) { 
+	.arrowBox {
+		display: none;
+ 		}
+}
+
+   @media (min-width: 1250px) { 
+	.arrowBox {
+		top: 35%;
  		}
 }

@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="queries.css">
+
+    <!-- Start Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    
     <script src="https://use.typekit.net/uxc6ivz.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
@@ -25,17 +30,34 @@
       </div>
 
       <div class="small-12 medium-4 large-4 columns">
-        <img id = "slider" src="slices/sample-quote1.png" width = "100%">
+        <div class="single-item slider">
+          <div>
+            <img src="slices/sample-quote1.png">
+          </div>
+
+          <div>
+            <img src="slices/sample-quote2.png">
+          </div>
+
+          <div>
+            <img src="slices/sample-quote3.png">
+          </div>
+        </div>
+
+        <div class = "arrowBox">
+          <div class="prev"></div>
+          <div class="next"></div>
+        </div>
       </div>
     </div>
 
     <div class = "row buttonBox">
         <div class = "small-12 medium-6 large-6 columns">
-          <img class = "left" src = "slices/buy-2016-pre-sale-tickets.png">
+          <a href = "#"><img class = "right" src = "slices/buy-2016-pre-sale-tickets.png"></a>
         </div>    
 
         <div class = "small-12 medium-6 large-6 columns">
-          <img src = "slices/see-last-years-event.png">
+          <a href = "#"><img src = "slices/see-last-years-event.png"></a>
         </div>
     </div>
 
@@ -54,13 +76,13 @@
 
 <!-- Start body -->
   <div class="row">
-    <div class="small-8 large-5 columns">
+    <div class="small-8 medium-5 large-5 columns">
       <h1>Festival News</h1>
     </div>
   </div>
 
   <div class="row">
-    <div class="small-12 large-5 columns">
+    <div class="small-12  medium-5 large-5 columns">
       <h3><a href = "#">Big Ears 2016 Artists Announced</a></h3>
         <p>Quostecta quostecta eaqui bla quis dolupta
          nones vendam nones et as nonsequamus...</p>
@@ -70,7 +92,7 @@
 
 
   <div class="row">
-    <div class="small-12 large-5 columns">
+    <div class="small-12 medium-5 large-5 columns">
       <h3><a href = "#">Top Events to See at Big Ears 2016</a> </h3>
       <p>Explant quostecta eaqui bla quis vendam nones
          et as nonsequamus molore...</p>
@@ -79,14 +101,14 @@
   </div>
 
   <div class="row">
-    <div class="small-12 large-5 columns">
+    <div class="small-12 medium-5 large-5 columns">
       <h3><a href = "#">10 Visual Artists to Catch at Big Ears Festival</a></h3>
         <p>Nones quostecta eaqui bla quis dolupta vendam
         nones et as nonsequamus molore...</p> 
         <hr>
     </div>
 
-    <div class="small-12  large-7 columns">
+    <div class="small-12  medium-7 large-7 columns">
     <iframe class = "video" width="560" height="315" src="https://www.youtube.com/embed/9eIufXCizK4?rel=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
@@ -95,28 +117,47 @@
 <!-- Start Footer -->
 <footer>
   <div class="row footerimg fullWidth">
-    <div class="small-12 large-3 columns">
+    <div class="small-12 medium-3 large-3 columns">
       <h1>Stay Connected</h1>
     </div>
 
-    <div class = "small-8 large-4 columns ftrcenter">
-      <input class = "address" type="text" placeholder="Email Address">
+
+<!-- PHP for email -->
+<?php
+  if (isset($_REQUEST['email']))  {
+  
+  $admin_email = "twicearoundmars@yahoo.com";
+  $email = $_REQUEST['email'];
+  
+  mail($admin_email, "From:" . $email);
+  echo "Thank you for contacting us!";
+  }
+  
+  else  {
+
+        }
+?>
+
+    <div class = "small-8 medium-4 large-4 columns ftrcenter">
+      <input class = "address" name="email" type="text" placeholder="Email Address">
     </div>
 
-    <div class="small-4 large-2 columns ftrcenter">
-      <a href="#" class="button postfix">Sign Up</a>
+    <div class="small-4 medium-2 large-2 columns ftrcenter">
+      <a href="#" type="submit" value="Submit" class="button postfix">Sign Up</a>
     </div>
 
-    <div class = "small-4 large-1 columns ftrcenter">
-      <img class = "social" src = "slices/big-ears-facebook@2x.png">
+
+
+    <div class = "small-4 medium-1 large-1 columns ftrcenter">
+      <img class = "social facebook" src = "slices/big-ears-facebook@2x.png">
     </div>
 
-    <div class = "small-4 large-1 columns ftrcenter">
+    <div class = "small-4 medium-1 large-1 columns ftrcenter">
       <img class = "social" src = "slices/big-ears-instagram@2x.png">
     </div>
 
-    <div class = "small-4 large-1 columns ftrcenter">
-      <img class = "social" src = "slices/big-ears-twitter@2x.png">
+    <div class = "small-4 medium-1 large-1 columns ftrcenter">
+      <img class = "social twitter" src = "slices/big-ears-twitter@2x.png">
     </div>
   </div>
 </footer>
@@ -135,5 +176,22 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".single-item").slick({
+        infinite: true,
+        arrows: false
+      });
+
+      $('.prev').click(function(){
+      $('.slider').slick('slickPrev');
+      })
+
+      $('.next').click(function(){
+      $('.slider').slick('slickNext');
+      })
+    });
+  </script>
   </body>
 </html>

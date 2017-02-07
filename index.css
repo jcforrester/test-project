@@ -68,7 +68,9 @@ background-color: #f2f2f2;
 	margin-top: 30px;
 }
 
-
+.right {
+	float: right;
+}
 .birds {
 margin-top: -160px;
 margin-left: 55px;
@@ -125,10 +127,9 @@ a {
 	border-bottom: 2px solid rgba(127,135,63, 0);
 }
 
-a:hover {
+h3 a:hover {
 	color: #4c5438;
 	border-bottom: 2px solid rgba(127,135,63, 1);
-
 }
 
 
@@ -178,8 +179,52 @@ footer {
 	border: 1px, #fff;
 }
 
-.address {
-	background-color: #f2f2f2;
-	color: red;
+.button:active {
+	color: #ffffff;
+	background-color: #4c5438;
+	border: 1px solid #fff;
 }
 
+.button:visited {
+	color: #ffffff;
+	background-color: #7f873f;
+	border: 1px solid #fff;
+}
+
+
+.address {
+	background-color: #f2f2f2;
+}
+
+
+/*Slick Slider Code*/
+
+	.slider {
+		height: 0px;
+	}
+    .slick-slide img {
+      width: 100%;
+    }
+
+      .prev {
+      background: url('slices/slider-arrow-left.png');
+      background-repeat: no-repeat;
+      height: 29px;
+      width: 29px;
+      position: absolute;
+      right: 10px;
+    }
+
+    .next {
+      background: url('slices/slider-arrow-right.png');
+      background-repeat: no-repeat;
+      height: 29px;
+      width: 29px;
+      position: absolute;
+    }
+
+    .arrowBox {
+      position: absolute;
+      top: 25%;
+      right: 30%;
+    }
