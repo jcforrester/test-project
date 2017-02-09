@@ -78,23 +78,25 @@
  		}
 }
 
-   @media (max-width: 640px) { 
+    @media (max-width: 1024px) { 
 	.social {
-		height: 50px;
- 		}
+	width: 30%;
+	height: 30%;
+ }
 }
 
-   @media (max-width: 640px) { 
-	.facebook {
-		margin-right: -25px;
- 		}
+    @media (max-width: 640px) { 
+	.social {
+	width: 15%;
+	height: 15%;
+	float: right;
+	position: relative;
+	right: 30%; /* or right 50% */
+text-align: left;
+ }
 }
 
-   @media (max-width: 640px) { 
-	.twitter {
-		margin-right: 80px;
- 		}
-}
+
 
 /*slick slider fixes*/
 
